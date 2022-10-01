@@ -34,6 +34,8 @@ jobs:
         push: true
         # List of tags
         tags: mbrosdax/mydockertest:latest
+        # Path to the Dockerfile
+        file: . # optional
 
     - name: Inspect
       run: |
@@ -59,8 +61,6 @@ jobs:
 #        cgroup-parent: # optional
 #        # Build's context is the set of files located in the specified PATH or URL
 #        context: # optional
-#        # Path to the Dockerfile
-#        file: # optional
 #        # List of metadata for an image
 #        labels: # optional
 #        # Load is a shorthand for --output=type=docker
