@@ -35,7 +35,7 @@ jobs:
         # List of tags
         tags: mbrosdax/mydockertest:latest
         # Path to the Dockerfile
-        file: . # optional
+        file: dockerfile # optional
 
     - name: Inspect
       run: |
