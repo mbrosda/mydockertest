@@ -42,9 +42,9 @@ jobs:
         # Path to the Dockerfile
         file: dockerfile # optional
 
-    - name: Inspect
-      run: |
-        docker image inspect docker.io/mbrosdax/mydockertest:latest
+#    - name: Inspect
+#      run: |
+#        docker image inspect docker.io/mbrosdax/mydockertest:latest
 
 
 
