@@ -47,7 +47,7 @@ jobs:
         # List of tags
         tags: |
           docker.io/mbrosdax/mydockertest:latest
-          ghcr.io/mbrosdax/mydockertest:latest
+          ghcr.io/mbrosda/mydockertest:latest
         # Path to the Dockerfile
         file: dockerfile # optional
 
