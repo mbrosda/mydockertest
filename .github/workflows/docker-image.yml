@@ -17,8 +17,8 @@ jobs:
     - uses: actions/checkout@v3
 
 #    - name: Build the Docker image
-##      run: docker build . --file Dockerfile --tag mydockertest:$(date +%s)
-#      run: docker build . --file Dockerfile --tag mydockertest:latest
+##      run: docker build . --file Dockerfile --tag mbrosdax/mydockertest:$(date +%s)
+#      run: docker build . --file Dockerfile --tag mbrosdax/mydockertest:latest
 
 
     - name: Set up Docker Buildx
@@ -31,13 +31,13 @@ jobs:
       uses: docker/build-push-action@v3.1.1
       with:
         # Push is a shorthand for --output=type=registry
-        push: # optional, default is false
+        push: true
         # List of tags
-        tags: mydockertest:latest
+        tags: mbrosdax/mydockertest:latest
 
     - name: Inspect
       run: |
-        docker image inspect mydockertest:latest
+        docker image inspect mbrosdax/mydockertest:latest
 
 
 
