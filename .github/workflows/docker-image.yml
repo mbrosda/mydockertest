@@ -45,7 +45,9 @@ jobs:
         # Push is a shorthand for --output=type=registry
         push: true
         # List of tags
-        tags: docker.io/mbrosdax/mydockertest:latest
+        tags: |
+          docker.io/mbrosdax/mydockertest:latest
+          ghcr.io/mbrosdax/mydockertest:latest
         # Path to the Dockerfile
         file: dockerfile # optional
 
