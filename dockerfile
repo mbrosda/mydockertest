@@ -1,3 +1,6 @@
+# example taken from here: https://typeofnan.dev/how-to-serve-a-static-app-with-nginx-in-docker/
+# kleine Änderung
+
 # nginx state for serving content
 FROM nginx:alpine
 
